@@ -1,0 +1,483 @@
+@font-face {
+    font-family: Calistoga;
+    src: url(./fonts/Calistoga/Calistoga-Regular.ttf);
+}
+
+@font-face {
+    font-family: InterThin;
+    src: url(./fonts/Inter/Inter-Thin.ttf);
+}
+
+@font-face {
+    font-family: InterSemiBold;
+    src: url(./fonts/Inter/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(./fonts/Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: InterMedium;
+    src: url(./fonts/Inter/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: InterLight;
+    src: url(./fonts/Inter/Inter-Light.ttf);
+}
+
+@media (max-width: 2000px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 99vw;
+        height: 215vh;
+    }
+
+    header{
+        display: flex;
+        padding: 0 auto;
+        align-items: center;
+        margin: 3vh 0;
+        width: 80vw;
+        height: 15vh;
+    }
+
+    .center{
+        display: flex;
+        padding: 0 auto;
+        align-items: center;
+        text-align: center;
+        padding-right: 52%;
+        width: 80vw;
+        height: 12vh;
+    }
+
+    .logo img{
+        width: 55%;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 20vw;
+    }
+
+    .menu a{
+        align-items: left;
+        font-family: InterLight;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .menu a:hover{
+        color: #fe6a0f;
+        text-decoration: underline  ;
+        transition: 0.7s;
+    }
+
+    #containerInit{
+        width: 80vw;
+        display: flex;
+        align-items: left;
+        justify-content: space-around;
+    }
+
+    .left{
+        height: 45vh;
+        width: 42%;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        align-items: left;
+        z-index: 7;
+    }
+
+    .left h1{
+        font-size: 5rem;
+        font-family: Calistoga;
+        font-weight: 400;
+        color: #fff;
+        line-height: 90%;
+    }
+
+    .left p{
+        font-family: InterLight;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    .button{
+        display: flex;
+        width: 300px;
+        height: 60px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+        justify-content: space-around;
+        font-family: InterRegular;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #fe6a0f;
+        border-radius: 5px;
+    }
+
+    .button:hover{
+        opacity: 0.75;
+    }
+
+    .right{
+        height: 45vh;
+        align-items: left;
+        z-index: 2;
+    }
+
+    .right img{
+        width: 92%;
+    }
+
+    #search{
+        border-radius: 5px;
+        margin-top: 3vh;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #1F1F1F;
+        width: 73vw;
+    }
+
+    .searchTittle{
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .searchTittle h1{
+        padding-left: 60px;
+        text-align: left;
+        font-family: InterLight;
+        color: #fff;
+        font-size: 1.9rem
+    }
+
+    .searchMain{
+        margin-bottom: 30px;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .leftS{
+        border-radius: 5px;
+        background-color: #2b2b2b;
+        margin-left: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .rightS{
+        border-radius: 5px;
+        background-color: #2b2b2b;
+        margin-right: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .searchButtonL{
+        font-family: InterRegular;
+        color: #979797;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 450px;
+        height: 70px;
+        outline: none;
+        z-index: 3;
+        margin-right: 50px;
+    }
+
+    .searchButtonR{
+        font-family: InterRegular;
+        color: #979797;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 450px;
+        height: 70px;
+        outline: none;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    select{
+        background-color: #2b2b2b;
+        border-radius: 5px;
+        font-family: InerRegular;
+        color: white;
+    }
+
+    .btnBusca{
+        margin-left: 50px;
+    }
+
+    #burguers{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        width: 73vw;
+        gap: 30px;
+    }
+
+    .hamburguerOne{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 62vw;
+        z-index: 4;
+    }
+
+    .hamburguerTwo{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 62vw;
+    }
+
+    .promocao{
+        width: 120px;
+        text-align: center;
+        padding: 13px;
+        text-decoration: none;
+        justify-content: space-around;
+        font-family: InterMedium;
+        font-size: 1rem;
+        color: white;
+        background-color: #fe6a0f;
+        border-radius: 5px;
+        margin-bottom: -95px;
+        margin-right: 170px;
+        z-index: 5;
+    }
+
+    .img img{
+        width: 105%;
+        align-items: center;
+    }
+
+    .burguerBox{
+        background: rgb(43,43,43);
+        background: linear-gradient(0deg, rgba(31,31,31,1) 55%, rgba(43,43,43,1) 45%);
+        height: 42vh;
+        width: 19vw;
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+        flex-direction: column;
+        border-radius: 8px;
+    }
+
+    .infoBurguer{
+        width: 19vw;    
+        padding-left: 35px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 5px;
+    }
+
+    .burguerBox p{
+        font-family: InterMedium;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .burguerBox h2{
+        font-family: Calistoga;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+    }
+
+    .burguerBox h3{
+        font-family: InterMedium;
+        color: #FE6A0F;
+        font-size: 32px;
+    }
+
+    .footer{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #1F1F1F;
+        width: 99vw;
+        height: 20vh;
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+
+    .footer img{
+        width: 45%;
+    }
+
+    .footer h4{
+        font-family: InterMedium;
+        color: #5F5F5F;
+    }
+}
+
+@media (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #141414;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    header{
+        display: flex;
+        padding: 0 auto;
+        align-items: center;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .center{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 auto;
+        align-items: center;
+        width: 100vw;
+        height: 12vh;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        display: none;
+    }
+
+    #containerInit{
+        width: 80vw;
+        display: flex;
+        align-items: left;
+        justify-content: space-around;
+    }
+
+    .left{
+        height: 45vh;
+        width: 42%;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        align-items: left;
+        z-index: 7;
+    }
+
+    .left h1{
+        font-size: 2rem;
+        font-family: Calistoga;
+        font-weight: 400;
+        color: #fff;
+        line-height: 90%;
+    }
+
+    .left p{
+        font-family: InterLight;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+
+    .button{
+        display: flex;
+        width: 50px;
+        height: 60px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+        justify-content: space-around;
+        font-family: InterRegular;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #fe6a0f;
+        border-radius: 5px;
+    }
+
+    .button:hover{
+        opacity: 0.75;
+    }
+
+    .right{
+        height: 45vh;
+        align-items: left;
+        z-index: 2;
+    }
+
+    .right img{
+        display: none;
+    }
+
+    .searchButtonL{
+        font-family: InterRegular;
+        color: #979797;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 30px;
+        height: 70px;
+        outline: none;
+        z-index: 3;
+        margin-right: 50px;
+    }
+
+    .searchButtonR{
+        font-family: InterRegular;
+        color: #979797;
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 30px;
+        height: 70px;
+        outline: none;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+/*border: 3px solid #ee0000;*/
